@@ -14,4 +14,6 @@
     <string name="genre">Genre</string>
     <string name="dan_brown_books">Dan Brown Books</string>
     <string name="todo">TODO</string>
+    <string name="_2017">2017</string>
+    <string name="view_book_description">View book description</string>
 </resources>

@@ -8,7 +8,7 @@ import javax.xml.parsers.DocumentBuilderFactory
 
 object XMLBookData {
 
-    fun  readXMLBooks(stream: InputStream): Array<Book?> {
+    fun readXMLBooks(stream: InputStream): Array<Book?> {
         var builder: DocumentBuilder? = null
         var xmlTree: Document? = null
         try {
