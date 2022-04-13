@@ -16,4 +16,6 @@
     <string name="todo">TODO</string>
     <string name="_2017">2017</string>
     <string name="view_book_description">View book description</string>
+    <string name="description">Description</string>
+    <string name="see_it_on_website">See it on website</string>
 </resources>

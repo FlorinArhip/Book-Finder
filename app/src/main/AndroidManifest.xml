@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BookFinder">
         <activity
+            android:name=".activity.BookFullInformationActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.BookPartialInformationActivity"
             android:exported="false" />
         <activity

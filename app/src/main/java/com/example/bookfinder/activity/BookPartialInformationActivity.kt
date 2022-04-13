@@ -1,6 +1,7 @@
 package com.example.bookfinder.activity
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import coil.load
@@ -26,6 +27,12 @@ class BookPartialInformationActivity : AppCompatActivity() {
         binding.currentBookPages.text = book?.pages.toString() + " pages"
         binding.currentBookYear.text ="Year: " + book?.year.toString()
         binding.currentBookImage.load(book?.image)
+
+        binding.btnBookDescription.setOnClickListener {
+            val myIntent = Intent(it.context, BookFullInformationActivity::class.java)
+            myIntent.putExtra("book", book)
+            startActivity(myIntent)
+        }
 
     }
 }

@@ -14,7 +14,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:background="@color/black"
         android:minHeight="?attr/actionBarSize"
-        app:title="Marvel movies"
+        app:title="Dan Brown Books"
         app:titleTextColor="@color/white"
         tools:context=".activity.MainActivity"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
