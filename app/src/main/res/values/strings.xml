@@ -9,4 +9,9 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="origin">Origin</string>
+    <string name="title">Title</string>
+    <string name="genre">Genre</string>
+    <string name="dan_brown_books">Dan Brown Books</string>
+    <string name="todo">TODO</string>
 </resources>
