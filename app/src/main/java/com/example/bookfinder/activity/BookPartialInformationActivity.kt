@@ -25,6 +25,7 @@ class BookPartialInformationActivity : AppCompatActivity() {
         }
         binding.currentBookTitle.text = book?.title ?: ""
         binding.currentBookPages.text = book?.pages.toString() + " pages"
+        binding.currentBookGenre.text = book?.genre ?: ""
         binding.currentBookYear.text ="Year: " + book?.year.toString()
         binding.currentBookImage.load(book?.image)
 

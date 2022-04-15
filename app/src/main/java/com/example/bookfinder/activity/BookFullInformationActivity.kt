@@ -1,6 +1,7 @@
 package com.example.bookfinder.activity
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
@@ -31,6 +32,13 @@ class BookFullInformationActivity : AppCompatActivity() {
         binding.bookYear.text = "Year " + book?.year.toString()
         binding.bookPages.text = book?.pages.toString() + " pages"
         binding.bookImage.load(book?.image)
+
+
+        binding.btnWebsite.setOnClickListener {
+            val myIntent = Intent(it.context, BookWebsiteActivity::class.java)
+            myIntent.putExtra("book", book)
+            startActivity(myIntent)
+        }
 
     }
 }

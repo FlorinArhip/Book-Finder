@@ -7,80 +7,115 @@
     android:background="@color/black"
     tools:context=".activity.BookPartialInformationActivity">
 
-
-    <ImageView
-        android:id="@+id/current_book_image"
+    <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/todo"
-        android:elevation="2dp"
-        app:flow_horizontalBias="0.5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent="0.8" />
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/current_book_title"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:text="@string/origin"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:flow_horizontalBias="0.5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/current_book_image" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/current_book_year"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:text="@string/_2017"
-        android:textAlignment="textEnd"
-        android:textColor="@color/white"
-        android:textSize="26sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/current_book_title"
-        app:layout_constraintWidth_percent="0.5" />
+            <ImageView
+                android:id="@+id/current_book_image"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="25dp"
+                android:contentDescription="@string/todo"
+                android:elevation="2dp"
+                app:circularflow_radiusInDP="5dp"
+                app:flow_horizontalBias="0.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.7" />
 
-    <TextView
-        android:id="@+id/current_book_pages"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:text="@string/_2017"
-        android:textAlignment="textStart"
-        android:textColor="@color/white"
-        android:textSize="26sp"
-        app:flow_horizontalBias="0.5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/current_book_year"
-        app:layout_constraintTop_toBottomOf="@id/current_book_title"
-        app:layout_constraintWidth_percent="0.5" />
+            <TextView
+                android:id="@+id/current_book_title"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/origin"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:flow_horizontalBias="0.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/current_book_image" />
 
-    <Button
-        android:id="@+id/btn_book_description"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/white"
-        android:text="@string/view_book_description"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/current_book_year"
-        app:layout_constraintWidth_percent="0.5">
+            <TextView
+                android:id="@+id/current_book_year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/_2017"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/current_book_title"
+                app:layout_constraintWidth_percent="0.5" />
 
-    </Button>
+            <TextView
+                android:id="@+id/current_book_pages"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/_2017"
+                android:textAlignment="textEnd"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:flow_horizontalBias="0.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/current_book_year"
+                app:layout_constraintTop_toBottomOf="@id/current_book_title"
+                app:layout_constraintWidth_percent="0.5" />
+
+
+            <TextView
+                android:id="@+id/current_book_genre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:text="@string/genre"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                app:flow_horizontalBias="0.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/current_book_year"
+                app:layout_constraintWidth_percent="0.8" />
+
+            <Button
+                android:id="@+id/btn_book_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/white"
+                android:text="@string/view_book_description"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/current_book_genre"
+                app:layout_constraintWidth_percent="0.5">
+
+            </Button>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

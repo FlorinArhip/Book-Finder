@@ -12,11 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BookFinder">
         <activity
+            android:name=".activity.BookWebsiteActivity"
+            android:exported="false"/>
+        <activity
             android:name=".activity.BookFullInformationActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".activity.BookPartialInformationActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".activity.MainActivity"
             android:exported="true"

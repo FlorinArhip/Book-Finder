@@ -1,10 +1,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.bookfinder.activity.MainActivity">
+    tools:context="com.example.bookfinder.activity.BookWebsiteActivity">
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:id="@+id/back"
+        android:icon="@drawable/ic_baseline_arrow_back_24"
+        android:title="@string/back" />
+
+    <item
+        android:id="@+id/refresh"
+        android:icon="@drawable/ic_baseline_refresh_24"
+        android:title="@string/refresh" />
+
+    <item
+        android:id="@+id/forward"
+        android:icon="@drawable/ic_baseline_arrow_forward_24"
+        android:title="@string/forward" />
 </menu>
